@@ -65,7 +65,7 @@ class HipsterShopServer {
 
   listen() {
     const server = this.server 
-    const port = this.port
+    const port = 50051;
     server.bindAsync(
       `[::]:${port}`,
       grpc.ServerCredentials.createInsecure(),
